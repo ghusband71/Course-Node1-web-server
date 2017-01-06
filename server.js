@@ -28,7 +28,7 @@ app.get("/about", middleware.requireAuthentication, function(req, res){
 });
 
 app.get("/logger", middleware.logger, function(req, res){
-	res.send("Logger Test");
+	res.send("Logger Route to test Logger middleware");
 });
 
 app.use(express.static(__dirname + "/public"));
